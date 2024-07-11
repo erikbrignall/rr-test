@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import pickle
+from sklearn.ensemble import RandomForestRegressor
 
 st.set_page_config(page_title='Risk Rating Estimation - DEMO')
 st.title('RR Estimation - DEMO')
