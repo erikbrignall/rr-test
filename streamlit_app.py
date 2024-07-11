@@ -2,11 +2,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import r2_score, mean_squared_error
 
 st.set_page_config(page_title='Risk Rating Estimation - DEMO')
 st.title('RR Estimation - DEMO')
