@@ -35,7 +35,7 @@ if submit_button:
     #loaded_model = pickle.load(open(filename, 'rb'))
     st.write(inputs[0])
     
-    vals = [1400,4595,1895,1885,384,146,8.4,355,29100,6516.61]
+    vals = [1400,4595,1895,1885,384,146,8,355,29100,6516.61]
     #dummy_pred = loaded_model.predict([inputs]).astype(int)
     #dummy_pred = loaded_model.predict([vals])
     #st.write(dummy_pred)
