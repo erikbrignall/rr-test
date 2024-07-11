@@ -33,5 +33,6 @@ if submit_button:
     filename = 'ml_model.sav'
     loaded_model = pickle.load(open(filename, 'rb'))
 
-    dummy_pred = loaded_model.predict([inputs]).astype(int)
+    #dummy_pred = loaded_model.predict([inputs]).astype(int)
+    dummy_pred = loaded_model.predict([inputs])
     st.write(dummy_pred)
