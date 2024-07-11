@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import pickle
 
 st.set_page_config(page_title='Risk Rating Estimation - DEMO')
 st.title('RR Estimation - DEMO')
@@ -27,3 +28,9 @@ if submit_button:
     #inputs = ['cc','total_length','total_width','kerb_weight','torque','max_speed']
     st.write("your inputs are")
     st.write(inputs)
+
+    filename = 'ml_model.sav'
+    loaded_model = pickle.load(open(filename, 'rb'))
+
+    dummy_pred = loaded_model.predict([inputs]).astype(int)
+    st.write(dummy_pred)
