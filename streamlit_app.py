@@ -4,6 +4,7 @@ import streamlit as st
 st.set_page_config(page_title='Risk Rating Estimation - DEMO')
 st.title('RR Estimation - DEMO')
 st.write('The following is a demo of using streamlit as an interface for a vehicle RR app.')
+st.write('this is a test')
 
 # Input Query
 with st.form(key='my_form_to_submit'):
