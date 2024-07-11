@@ -25,5 +25,5 @@ with st.form(key='my_form_to_submit'):
 if submit_button: 
     #inputs = ['cc','total_length','total_width','kerb_weight','torque','max_speed','acceleration','power','list_price','impact_parts_front']
     inputs = ['cc','total_length','total_width','kerb_weight','torque','max_speed']
-    print("your inputs are")
-    print(inputs)
+    st.write("your inputs are")
+    st.write(inputs)
